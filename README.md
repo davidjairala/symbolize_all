@@ -1,6 +1,8 @@
 # SymbolizeAll
 
-TODO: Write a gem description
+Symbolizes everything possible in a Hash or Array.
+
+Converts every possible key/value inside a Hash or Array into its symbolized version, recursively.
 
 ## Installation
 
@@ -18,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    > {'friend' => 'mary','enemy' => 'peter'}.symbolize_all
+    => {:friend=>:mary, :enemy=>:peter}
+
+    > {'friend' => 'mary','number' => 1, 5 => 10}.symbolize_all
+    => {:friend=>:mary, :number=>1, 5=>10}
+
+    > {'friend' => 'normal', 'nested' => {"one" => "two"}}.symbolize_all
+    => {:friend=>:normal, :nested=>{:one=>:two}}
+
+More ussage examples and results can be found in `spec/symbolize_all_spec.rb`
 
 ## Contributing
 
