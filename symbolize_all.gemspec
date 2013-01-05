@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["davidjairala@gmail.com"]
   gem.description   = %q{Symbolizes everything possible in a Hash or Array}
   gem.summary       = %q{Converts every possible key/value inside a Hash or Array into its symbolized version, recursively}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/davidjairala/symbolize_all"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
